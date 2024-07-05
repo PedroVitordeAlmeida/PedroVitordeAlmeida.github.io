@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./stylepage2.css" />
+    <title>Vision Pagina</title>
+    <script src="https://kit.fontawesome.com/82c7270a45.js" crossorigin="anonymous"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="divisaoprincipal">
+        <header class="HomeHeader">
+            <nav class="Navegação">
+                <a href="indexpage1.html"><img class="imagemlogo" src="imagens/S2.png" alt=""></a>
+                <div class="menu-toggle" onclick="toggleMenu();">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a class="botoesnav" href="page2vision.html">Vision</a></li>
+                    <li><a class="botoesnav" href="page3iphone.html">IPhone</a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="separacaosecao1">
+                <div class="divsecaodetexto">
+                    <h1>Apple Vision Pro <br> o que você precisa <br> saber:</h1>
+                    <p class="paragrafos">O Apple Vision Pro é a revolução em realidade aumentada e</p>
+                    <p class="paragrafos">virtual! Assista a filmes em uma tela gigante, participe de </p>
+                    <p class="paragrafos">reuniões virtuais e explore mundos 3D. Perfeito para jogos,</p>
+                    <p class="paragrafos">trabalho e bem-estar. Não perca essa inovação!</p>
+                </div>
+
+                <div class="secao2">
+                    <img class="imagem" src="imagens/applevs.png" alt="">
+                </div>
+            </div>
+            <div class="divdovideo">
+                <video class="video" src="videos/videoapplevision.mp4"  autoplay loop muted></video>
+            </div>
+        </main>
+
+        <div class="divfooter">
+            <footer class="footerfinal">
+                <label class="labelfooter">STOCK</label>
+                <a class="insta" href="https://www.instagram.com/_stockbrasil/"><i class="fa-brands fa-instagram"></i></a>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playwrite+AU+VIC:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playwrite+AU+VIC:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset e estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Menu de Navegação */
+.Navegação {
+    background-color: #D9D9D9;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 50px;
+    z-index: 1000;
+}
+
+.imagemlogo {
+    width: 76px;
+    border-radius: 50%;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    color: #9e9ea2;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.botoesnav {
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: 0.5s;
+}
+
+.botoesnav:hover {
+    color: white;
+    transition: 0.5s;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: gray;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .botoesnav {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
+.separacaosecao1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 20px;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .separacaosecao1 {
+        flex-direction: row;
+        justify-content: center;
+        gap: 50px;
+        padding-top: 150px;
+    }
+}
+
+.divsecaodetexto h1 {
+    font-family: "Kanit", sans-serif;
+    text-align: center;
+}
+
+.paragrafos {
+    font-family: "Poppins", sans-serif;
+    color: #808080;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.secao2 .imagem {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid black; /* Borda grossa adicionada aqui */
+    border-radius: 50px;
+}
+
+.divdovideo {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+    background-color: gray;
+    
+}
+
+.divdovideo .video {
+    max-width: 100%;
+    height: auto;
+    
+}
+
+.video {
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.footerfinal {
+    background-color: #D9D9D9;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 30px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.labelfooter {
+    color: black;
+    font-size: 14px;
+}
+
+.insta {
+    color: black;
+    font-size: 20px;
+    margin-left: 10px;
+}

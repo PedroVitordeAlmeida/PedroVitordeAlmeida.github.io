@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./stylepage1.css" />
+    <title>Home Page Stock</title>
+    <script src="https://kit.fontawesome.com/82c7270a45.js" crossorigin="anonymous"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="divisaoprincipal">
+        <header class="HomeHeader">
+            <nav class="Navegação">
+                <a href="indexpage1.html"><img class="imagemlogo" src="imagens/S2.png" alt=""></a>
+                <div class="menu-toggle" onclick="toggleMenu();">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a class="botoesnav" href="page2vision.html">Vision</a></li>
+                    <li><a class="botoesnav" href="page3iphone.html">IPhone</a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+
+        <main class="HomeMain">
+            <section class="Seção1">
+                <img class="imagemmain1" src="imagens/Apple Vision Pro D.png" alt="">
+                <img class="imagemmain2" src="imagens/Apple Vision Pro F.png" alt="">
+                <img class="imagemmain3" src="imagens/Apple Vision Pro Side.png" alt="">
+            </section>
+
+            <div class="divlogomain">
+                <img class="imagemlogomain" src="imagens/S2.png" alt="">
+            </div>
+
+            <section class="Seção2">
+                <p class="paragrafo1">A loja <STRONG>STOCK </STRONG>vende produtos Apple,</p>
+                <p class="paragrafo2">oferecendo os mais recentes dispositivos e acessórios.</p>
+                <p class="paragrafo3">É a escolha ideal para quem busca qualidade e inovação.</p>
+            </section>
+
+            <section class="Seção3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                    Descobrir
+                </button>
+            </section>
+        </main>
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Produtos</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    Stock: Sua loja de confiança para eletrônicos e gadgets. Descubra uma ampla gama de produtos de alta qualidade e preços imbatíveis. Experiência de compra fácil e segura. Venha conhecer!
+                </div>
+                <div class="dropdown mt-3">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        Produtos
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="page2vision.html">Vision</a></li>
+                        <li><a class="dropdown-item" href="page3iphone.html">IPhone</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="divfooter">
+            <footer class="footerfinal">
+                <label class="labelfooter">STOCK</label>
+                <a class="insta" href="https://www.instagram.com/_stockbrasil/"><i class="fa-brands fa-instagram"></i></a>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
